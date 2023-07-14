@@ -13,7 +13,6 @@ class ClientSeeder extends Seeder
      */
     public function run(): void
     {
-        Client::factory(20)->create();
         $cl = [
             [
                 'last_name' => 'Salutan',
@@ -25,7 +24,26 @@ class ClientSeeder extends Seeder
                 'email' => 'salutanemanuelle@gmail.com',
                 'initial_deposit' => '200000',
             ],
-            
+            [
+                'last_name' => 'Salutan',
+                'first_name' => 'John Emanuelle',
+                'middle_name' => 'Resaba',
+                'address' => 'Sitio Mahayahay Bunacan, Tubigon, Bohol',
+                'birth_date' => '2002-05-01',
+                'phone_number' => '09087446995',
+                'email' => 'emanuelle21latina@gmail.com',
+                'initial_deposit' => '200000',
+            ],
+            [
+                'last_name' => 'Pongase',
+                'first_name' => 'John Ivan',
+                'middle_name' => 'Sumipo',
+                'address' => 'Tinangnan, Tubigon, Bohol',
+                'birth_date' => '2001-06-09',
+                'phone_number' => '09087446995',
+                'email' => 'sumipo231@gmail.com',
+                'initial_deposit' => '200000',
+            ],
         ];
 
         foreach($cl as $c) {
